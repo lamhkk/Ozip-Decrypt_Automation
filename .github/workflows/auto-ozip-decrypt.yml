@@ -14,8 +14,8 @@ on:
     types: [started]
 
 env:
-  FIRMWARE_LINK: https://download.c.realme.com/osupdate/CPH1861EX_11_OTA_0500_all_fLuS0Ipoe93t.ozip
-  FIRMWARE_NAME: CPH1861EX_11_OTA_0500_all_fLuS0Ipoe93t.ozip
+  FIRMWARE_LINK: https://assorted.downloads.oppo.com/firmware/CPH1803/CPH1803EX_11_OTA_0340_all_9lyHkBtUTrmx.ozip
+  FIRMWARE_NAME: CPH1803EX_11_OTA_0340_all_9lyHkBtUTrmx.ozip
   TZ: Asia/Kolkata
 
 jobs:
@@ -41,7 +41,7 @@ jobs:
              wget https://raw.githubusercontent.com/techyminati/oppo_ozip_decrypt/master/ozipdecrypt.py
              sudo python ozipdecrypt.py $FIRMWARE_NAME
              
-       - name: Upload Decrypted Zip
+       - name: Upload Decrypted ZipCPH1803EX_11_OTA_0340_all_9lyHkBtUTrmx.ozip
          run: |
               touch links.txt
               curl -sL https://git.io/file-transfer | sh
