@@ -40,6 +40,7 @@ jobs:
              sudo -H pip install setuptools wheel docopt pycryptodome
              wget https://raw.githubusercontent.com/techyminati/oppo_ozip_decrypt/master/ozipdecrypt.py
              sudo python ozipdecrypt.py $FIRMWARE_NAME
+             zip -r CPH1803EX_11_OTA_0340_all_9lyHkBtUTrmx.ozip
              
        - name: Upload Decrypted ZipCPH1803EX_11_OTA_0340_all_9lyHkBtUTrmx.ozip
          run: |
